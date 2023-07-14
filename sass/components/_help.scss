@@ -1,0 +1,57 @@
+.features {
+    background-color: $secondaryBgColor;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.features__list {
+    @include tablet {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+}
+
+.features__item {
+    &:not(:last-child) {
+        @media screen and (max-width: 767px) {
+            margin-bottom: 30px;
+        }
+    }
+
+    @include tablet {
+        flex-basis: calc((100% - 30px));
+    }
+
+    @include desktop {
+        flex-basis: calc((100% - 90px) / 2);
+    }
+}
+
+.features__box {
+    margin-bottom: 10px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: $secondaryBgColor;
+}
+
+.features__subtitle {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: $mainDarkColor;
+}
+
+.help-button {
+    margin-top: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: center;
+    align-items: center;
+    
+}
