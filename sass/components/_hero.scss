@@ -1,6 +1,6 @@
 .hero {
     background-image: linear-gradient(to bottom, $heroBgColor, $heroBgColor), 
-    url(./images/03.jpg);
+    url(..//../images/03.jpg);
     background-color: $heroBgColor;
     background-repeat: no-repeat;
     background-size: cover;
@@ -12,24 +12,24 @@
     height: 570px;
     @include retina {
     background-image: linear-gradient(to bottom, $heroBgColor, $heroBgColor), 
-    url(./images/03.jpg); }
+    url(..//../images/03.jpg); }
     @include tablet {
     height: 720px;
     background-image: linear-gradient(to bottom, $heroBgColor, $heroBgColor),
-    url(./images/03.jpg);
+    url(..//../images/03.jpg);
     
     @include retina {
     background-image: linear-gradient(to bottom, $heroBgColor, $heroBgColor),
-    url(./images/03.jpg);
+    url(..//../images/03.jpg);
     }  
 }
     @include desktop {
     background-image: linear-gradient(to bottom, $heroBgColor, $heroBgColor),
-    url(./images/03.jpg);
+    url(..//../images/03.jpg);
 
     @include retina {
         background-image: linear-gradient(to bottom, $heroBgColor, $heroBgColor),
-        url(./images/03.jpg);
+        url(..//../images/03.jpg);
     }
     max-width: 1920px;
     }
