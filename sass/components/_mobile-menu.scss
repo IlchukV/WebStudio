@@ -12,7 +12,7 @@
     z-index: 5;
     transform: translateX(100%);
     transition: transform $duration $timingFunction;
-    background-color: $mainWhiteColor;
+    background-color: $secondaryTitleColor;
     overflow-y: scroll;
 }
 
@@ -30,11 +30,12 @@
     border: none;
     background-color: transparent;
     cursor: pointer;
+    fill: $accentColor;
     transition: fill $duration $timingFunction;
 
     &:hover,
     &:focus {
-        fill: $secondaryAccentColor;
+        fill: $mainLightColor;
     }
 
     @include tablet {
@@ -67,7 +68,7 @@
 
 .mobile-menu-contact {
     margin-top: auto;
-    margin-bottom: 64px;
+    margin-bottom: 44px;
 }
 
 .mobile-menu-contact__item {
@@ -89,11 +90,14 @@
     font-size: 24px;
     line-height: 1.17;
     letter-spacing: 0.02em;
+    color: $secondaryAccentColor;
 }
 
 .mobile-menu-social {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 20px;
+
 }
 
 .mobile-menu-social__item {
@@ -106,10 +110,16 @@
     position: relative;
 
     font-weight: 500;
-    font-size: 18px;
+    font-size: 15px;
     line-height: 1.22;
     letter-spacing: 0.02em;
     color: $secondaryAccentColor;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        fill: $mainLightColor;
+    }
 
     &::after {
         position: absolute;
@@ -120,6 +130,6 @@
     }
 
     .mobile-menu-social__item:not(:last-child) &::after {
-        background-color: $mainTextColor;
+        background-color: $mainDarkColor;
     }
 }
